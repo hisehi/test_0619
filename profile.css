@@ -1,0 +1,125 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    width: 1920px;
+    background-color: #fff1e6;
+}
+.profile{
+    margin-top: 200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.profile img{
+    width: 1400px;
+    position: absolute;
+}
+.profile h1{
+    position: absolute;
+    font-size: 100px;
+    top: 300px;
+    color: #5e4f41;
+}
+.profile h2{
+    position: absolute;
+    color: #5e4f41;
+    top: 650px;
+    left: 950px;
+    font-size: 32px;
+}
+
+
+.contact img{
+    position: absolute;
+    width: 1400px;
+    left: -720px;
+}
+.contact h3{
+    position: absolute;
+    left: -360px;
+    top: 1200px;
+    color: #5e4f41;
+    font-size: 50px;
+}
+.contact p{
+    position: absolute;
+    left: -380px;
+    top: 1320px;
+    color: #5e4f41;
+    font-size: 20px;
+}
+
+.education img{
+    position: absolute;
+    width: 1400px;
+    left: -750px;
+}
+.education h3{
+    position: absolute;
+    left: -5px;
+    top: 1450px;
+    color: #5e4f41;
+    font-size: 50px;
+}
+.education p{
+    width: 500px;
+    position: absolute;
+    left: -10px;
+    top: 1550px;
+    color: #5e4f41;
+    font-size: 20px;
+}
+
+.skills img{
+    position: absolute;
+    width: 1400px;
+    left: -730px;
+}
+.skills h3{
+    position: absolute;
+    left: -300px;
+    top: 1680px;
+    color: #5e4f41;
+    font-size: 50px;
+}
+.skills p{
+    position: absolute;
+    left: -350px;
+    top: 1800px;
+    color: #5e4f41;
+    font-size: 25px;
+}
+
+.contact{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-150px);
+}
+.education{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(150px);
+    
+}
+.skills{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-150px);
+}
+
+.show .contact{
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+.show .education{
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1.0s;
+}
+.show .skills{
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1.5s;
+}
